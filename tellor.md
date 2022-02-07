@@ -1,17 +1,17 @@
 ---
-title: How to Set Up Tellor as your Oracle
-description: A guide to get started with integrating the Tellor oracle into your protocol
+title: How to Use Tellor on Polygon
+description: A guide to get started with integrating the Tellor oracle into your Polygon contract
 author: "Tellor"
 lang: en
 sidebar: true
-tags: ["solidity", "smart contracts", "price feeds", "oracles"]
+tags: ["solidity", "smart contracts", "price feeds", "oracles", "Polygon", "Matic", "Tellor"]
 skill: beginner
-published: 2021-06-29
+published: 2022-02-XX
 source: Tellor Docs
 sourceUrl: https://docs.tellor.io/tellor/
 ---
 
-Pop Quiz: Your protocol is just about finished, but it needs an oracle to get access to off chain data...What do you do?
+Participation in the tellor network is completely open (even to users themselves).
 
 ## (Soft) Prerequisites {#soft-prerequisites}
 
@@ -27,7 +27,7 @@ Tellor is a live and open-sourced oracle ready for implementation. This beginner
 
 ## Overview {#overview}
 
-Tellor is an oracle system where parties can request the value of an off-chain data point (e.g. BTC/USD) and reporters compete to add this value to an on-chain data-bank, accessible by all Ethereum smart contracts. The inputs to this data-bank are secured by a network of staked reporters. Tellor utilizes crypto-economic incentive mechanisms, rewarding honest data submissions by reporters and punishing bad actors through the issuance of Tellor’s token, Tributes (TRB) and a dispute mechanism.
+Tellor is an oracle system where parties can request the value of an off-chain data point (e.g. BTC/USD) and reporters compete to add this value to an on-chain data-bank, accessible by all Polygon smart contracts. The inputs to this data-bank are secured by a network of staked reporters. Tellor utilizes crypto-economic incentive mechanisms. Honest data submissions by reporters are rewarded by the issuance of Tellor’s token. Any bad actors are quickly punished and removed from the network by a dispute mechanism.
 
 In this tutorial we'll go over:
 
@@ -77,22 +77,12 @@ contract BtcPriceContract is UsingTellor {
 
 ## Addresses: {#addresses}
 
-Mainnet: [`0x88df592f8eb5d7bd38bfef7deb0fbc02cf3778a0`](https://etherscan.io/address/0x88df592f8eb5d7bd38bfef7deb0fbc02cf3778a0#code)
+Tellor Tributes: [`0xe3322702bedaaed36cddab233360b939775ae5f1`](https://polygonscan.com/token/0xe3322702bedaaed36cddab233360b939775ae5f1#code)
 
-#### Looking to do some testing first? See the list below for our active testnet addresses: {#looking-to-do-some-testing-first-see-the-list-below-for-our-active-testnet-addresses}
+Oracle: [`0xfd45ae72e81adaaf01cc61c8bce016b7060dd537`](https://polygonscan.com/address/0xfd45ae72e81adaaf01cc61c8bce016b7060dd537#code)
 
-Rinkeby: [`0x88df592f8eb5d7bd38bfef7deb0fbc02cf3778a0`](https://rinkeby.etherscan.io/address/0x88df592f8eb5d7bd38bfef7deb0fbc02cf3778a0#code)
-
-Kovan: [`0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7`](https://kovan.etherscan.io/address/0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7#code)
-
-Ropsten: [`0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7`](https://ropsten.etherscan.io/address/0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7#code)
-
-Goerli: [`0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7`](https://goerli.etherscan.io/address/0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7#code)
-
-BSC Testnet: [`0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7 `](https://testnet.bscscan.com/address/0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7#code)
+#### Looking to do some testing first?: {#looking-to-do-some-testing-first}
 
 Polygon Mumbai Testnet: [`0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7 `](https://mumbai.polygonscan.com/address/0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7/contracts#code)
-
-Arbitrum Testnet: [`0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7 `](https://rinkeby-explorer.arbitrum.io/address/0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7)
 
 #### For a more robust implementation of the Tellor oracle, check out the full list of available functions [here.](https://github.com/tellor-io/usingtellor/blob/master/README.md) {#for-a-more-robust-implementation-of-the-tellor-oracle-check-out-the-full-list-of-available-functions-here}
