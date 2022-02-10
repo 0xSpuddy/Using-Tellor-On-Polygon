@@ -11,7 +11,7 @@ source: Tellor Docs
 sourceUrl: https://docs.tellor.io/tellor/
 ---
 
-Participation in the tellor network is completely open (even to users themselves).
+Participation in the tellor network is completely open. Our goal is to be the most censorship-resistant blockchain oracle.
 
 ## (Soft) Prerequisites {#soft-prerequisites}
 
